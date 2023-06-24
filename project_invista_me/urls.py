@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from invista_me import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.pagina_inicial),
+    path('novo_investimento/', views.novo_investimento, name='novo_investimento'),
+    path('investimento_registrado/', views.investimento_registrado, name='investimento_registrado')
 ]
