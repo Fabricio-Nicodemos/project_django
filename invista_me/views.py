@@ -7,3 +7,7 @@ def pagina_inicial(request):
 
 def contato(request):
     return HttpResponse('Para dúvidas, enviar um e-mail para contato@suporte.com')
+
+
+def minha_historia(request):
+    return render(request, 'investimentos/minha_historia.html')
